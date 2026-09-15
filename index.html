@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCPE Tier Test (0.15) | Minecraft PE 0.15.10 PvP Tier List</title>
+<meta name="description" content="MCPE Tier Test (0.15) is a community Minecraft PE 0.15.10 PvP tier list and testing website. View player tiers, leaderboard rankings, Best PvPer of Asia, and submit a tier test.">
+<meta name="keywords" content="MCPE Tier Test, Minecraft PE 0.15.10, Minecraft Pocket Edition 0.15.10, MCPE 0.15 PvP, MCPE tier list, MCPE PvP tier list, Minecraft PE PvP, protocol 84, MCPE leaderboard, Best PvPer of Asia">
+<meta name="author" content="ItzSparoW">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#090b0f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MCPE Tier Test (0.15) | Minecraft PE 0.15.10 PvP Tier List">
+<meta property="og:description" content="Community Minecraft PE 0.15.10 PvP tier list, player leaderboard, Best PvPer of Asia, and tier testing.">
+<meta property="og:site_name" content="MCPE Tier Test (0.15)">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MCPE Tier Test (0.15) | Minecraft PE 0.15.10 PvP Tier List">
+<meta name="twitter:description" content="Minecraft PE 0.15.10 PvP tier list, leaderboard, Best PvPer of Asia, and tier testing.">
+<meta name="googlebot" content="index, follow">
+<style>
+:root{--bg:#090b0f;--panel:#11151b;--panel2:#171c24;--text:#f4f7fb;--muted:#929baa;--accent:#55d86a;--border:#28303b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#172019 0,#090b0f 42%);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+header{padding:42px 20px 30px;text-align:center;border-bottom:1px solid var(--border);background:rgba(5,7,10,.8)}
+.badge{display:inline-block;padding:7px 12px;border:1px solid #315838;border-radius:20px;color:#7bea8a;font-size:12px;font-weight:700;letter-spacing:1px}
+h1{font-size:clamp(30px,6vw,58px);margin:14px 0 8px;text-transform:uppercase;letter-spacing:2px}
+.subtitle{color:var(--muted);margin:0 auto;max-width:650px}
+nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
+nav button,.action{border:1px solid var(--border);background:var(--panel2);color:var(--text);padding:11px 16px;border-radius:9px;cursor:pointer;font-weight:700}
+nav button.active,.action.primary{background:var(--accent);color:#061007;border-color:var(--accent)}
+main{max-width:1100px;margin:30px auto;padding:0 18px}.topbar{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+input,select{background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:9px;padding:12px;outline:none}
+input{min-width:220px}.tier{margin:14px 0;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:rgba(17,21,27,.85)}
+.tier-head{display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--border)}
+.tier-label{width:55px;height:45px;display:grid;place-items:center;border-radius:8px;font-weight:900;font-size:20px;background:#6b1717}
+.tier[data-tier="S+"] .tier-label{background:#e6a11b;color:#171008}.tier[data-tier="S"] .tier-label{background:#e04444}
+.tier[data-tier="A"] .tier-label{background:#d85b9e}.tier[data-tier="B"] .tier-label{background:#7667d8}
+.tier[data-tier="C"] .tier-label{background:#438dcc}.tier[data-tier="D"] .tier-label{background:#68717c}
+.tier-info{flex:1}.tier-info b{display:block}.tier-info small{color:var(--muted)}
+.cards{min-height:105px;padding:14px;display:flex;gap:12px;flex-wrap:wrap}
+.card{width:125px;min-height:86px;padding:12px;border-radius:10px;background:#202732;border:1px solid #303a47;cursor:grab;display:flex;flex-direction:column;justify-content:space-between}
+.card:active{cursor:grabbing}.card .avatar{height:38px;width:38px;border-radius:7px;display:grid;place-items:center;background:#303b48;font-weight:900}.card small{color:#aab3c0}
+.empty{color:#68717c;padding:25px;text-align:center;width:100%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.stat{background:var(--panel);border:1px solid var(--border);padding:18px;border-radius:12px}.stat b{font-size:25px;display:block}.stat span{color:var(--muted);font-size:12px}
+.modal{position:fixed;inset:0;background:#0009;display:none;place-items:center;padding:20px}.modal.show{display:grid}.box{background:#11151b;border:1px solid var(--border);border-radius:15px;padding:22px;max-width:430px;width:100%}.box h2{margin-top:0}.form{display:grid;gap:10px}.form input,.form select,.form textarea{width:100%}.form textarea{min-height:90px;resize:vertical}.close{float:right;background:none;border:0;color:#fff;font-size:25px;cursor:pointer}
+footer{text-align:center;color:#68717c;padding:35px 15px;border-top:1px solid var(--border);margin-top:45px}
+@media(max-width:600px){.stats{grid-template-columns:1fr}.card{width:calc(50% - 6px)}.topbar input{width:100%}}
+
+.admin-table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.admin-table th,.admin-table td{padding:12px;text-align:left;border-bottom:1px solid var(--border);font-size:14px}
+.admin-table th{color:#7bea8a;background:#171c24}.admin-table td{color:#dce2ea}.admin-table tr:last-child td{border-bottom:0}
+.admin-card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;margin:10px 0}
+.admin-card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;color:#b9c1cd;font-size:14px}
+.admin-card-grid b{color:#fff}.danger{background:#641e1e!important;border-color:#8b3030!important;color:#fff!important}
+@media(max-width:700px){.admin-table{display:block;overflow-x:auto}.admin-card-grid{grid-template-columns:1fr}}
+
+
+/* ===== Scroll animations & polish ===== */
+html{scroll-behavior:smooth}
+body{overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 10%,rgba(85,216,106,.08),transparent 30%),radial-gradient(circle at 85% 30%,rgba(85,216,106,.05),transparent 28%);z-index:-1}
+#scrollProgress{position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,var(--accent),#9affaa);z-index:9999;box-shadow:0 0 12px rgba(85,216,106,.55);transition:width .08s linear}
+.brand-version{font-size:.55em;color:var(--accent);vertical-align:middle;letter-spacing:.02em}
+header{animation:heroIn .8s ease both}
+@keyframes heroIn{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(28px) scale(.985);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+.card,.panel,.tier-card,.admin-card,.form-card,.notice,.topbar,.table-wrap{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.card:hover,.panel:hover,.tier-card:hover,.admin-card:hover,.form-card:hover{transform:translateY(-4px);box-shadow:0 14px 35px rgba(0,0,0,.22);border-color:rgba(85,216,106,.45)}
+nav button,.action{transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+nav button:hover,.action:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(0,0,0,.2)}
+nav button:active,.action:active{transform:translateY(0) scale(.97)}
+.ripple{position:relative;overflow:hidden}
+.ripple-wave{position:absolute;border-radius:50%;transform:scale(0);animation:ripple .55s linear;background:rgba(255,255,255,.22);pointer-events:none}
+@keyframes ripple{to{transform:scale(4);opacity:0}}
+#backToTop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border:1px solid var(--border);border-radius:50%;background:var(--panel2);color:var(--text);font-size:20px;font-weight:800;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);transition:.25s;z-index:999}
+#backToTop.show{opacity:1;visibility:visible;transform:none}
+@media(max-width:600px){#backToTop{right:12px;bottom:12px}.reveal{transform:translateY(18px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,header{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.card,.panel,.tier-card,.admin-card,.form-card{transition:none}}
+
+.player-card-click{cursor:pointer}.rank-badge{display:inline-block;margin-top:6px;padding:4px 8px;border-radius:8px;background:#252c36;color:#7bea8a;font-size:12px;font-weight:700}.profile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:14px}.profile-item{padding:10px;border:1px solid var(--border);border-radius:10px;background:var(--panel2)}.profile-item small{display:block;color:var(--muted);margin-bottom:4px}.profile-skin{width:140px;height:140px;object-fit:contain;background:#090b0f;border:1px solid var(--border);border-radius:12px;padding:8px}.leaderboard-tier{margin:14px 0;border:1px solid var(--border);border-radius:14px;overflow-x:auto;overflow-y:hidden;background:rgba(17,21,27,.85);-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y}.leaderboard-tier-head,.leader-row{min-width:620px}.leader-row{cursor:pointer}.leader-row:active{background:rgba(85,216,106,.08)}
+.leaderboard-tier-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px;border-bottom:1px solid var(--border);background:rgba(255,255,255,.02)}
+.leaderboard-tier-title{font-weight:900;font-size:18px}.leaderboard-remain{color:var(--muted);font-size:13px}.leader-row{display:grid;grid-template-columns:38px 42px minmax(120px,1fr) auto auto;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid rgba(255,255,255,.06)}.leader-row:last-child{border-bottom:0}.leader-number{font-weight:900;color:var(--muted)}.leader-head{width:36px;height:36px;object-fit:cover;image-rendering:pixelated;border-radius:7px;border:1px solid var(--border);background:#090b0f}.leader-country{font-size:13px;color:var(--muted);white-space:nowrap}.leader-rank{font-size:12px;font-weight:800;color:#7bea8a;padding:4px 7px;border-radius:7px;background:#18251b}.skin-view-wrap{display:flex;justify-content:center;align-items:center}.skin-full-body{width:min(240px,80vw);height:300px;object-fit:contain;background:#090b0f;border:1px solid var(--border);border-radius:15px;padding:12px;image-rendering:pixelated}.skin-body-canvas{width:min(240px,80vw);height:320px;display:block;background:#090b0f;border:1px solid var(--border);border-radius:15px;image-rendering:pixelated}.asia-row{display:grid;grid-template-columns:55px 44px minmax(120px,1fr) auto auto;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.06)}.asia-row:last-child{border-bottom:0}.asia-number{font-weight:900;color:#ffd86b}.asia-empty{color:var(--muted);font-style:italic}.asia-head{width:38px;height:38px;border-radius:7px;border:1px solid var(--border);background:#090b0f;image-rendering:pixelated;object-fit:cover}
+.click-hint{color:var(--muted);font-size:11px;margin-top:5px}
+/* PRO FEATURES */
+.feature-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.feature-toolbar input,.feature-toolbar select{flex:1;min-width:140px}
+.theme-toggle{position:fixed;right:16px;bottom:16px;z-index:50;border-radius:999px;box-shadow:0 8px 25px #0008}
+.country-flag{font-size:20px;margin-right:5px}.verified{color:#55d86a;font-size:12px;font-weight:800}.status-pill{display:inline-block;padding:4px 8px;border-radius:999px;font-size:11px;font-weight:800;background:#28303b;color:#fff}.status-pending{background:#5b4610;color:#ffd86b}.status-testing{background:#183c63;color:#7fc8ff}.status-passed{background:#174d2a;color:#8cffad}.status-failed{background:#641e1e;color:#ff9b9b}
+.profile-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.profile-skin{width:150px;height:150px;object-fit:contain;background:#090b0f;border:1px solid var(--border);border-radius:15px;padding:10px}.history{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.history span{padding:5px 8px;border:1px solid var(--border);border-radius:7px;background:#171c24;font-size:12px}.mode-board{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:14px}.mode-card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px}.mode-card b{font-size:18px}.announcement{padding:12px 14px;border:1px solid #315838;background:#102015;border-radius:12px;margin:12px 0;color:#bfffc9}.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#11151b;border:1px solid var(--border);padding:12px 16px;border-radius:10px;z-index:100;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+body.light-mode{--bg:#f3f5f7;--panel:#fff;--panel2:#eef1f4;--text:#15191f;--muted:#5d6672;--border:#d5dbe2;background:#f3f5f7;color:var(--text)}
+body.light-mode header{background:#ffffffdd}.rank-badge{display:inline-block;padding:4px 7px;border-radius:6px;background:#315838;color:#bfffc9;font-size:11px;font-weight:800}.share-link{word-break:break-all;font-size:12px;color:#7fc8ff}
+@media(max-width:600px){.feature-toolbar{display:grid}.profile-skin{width:120px;height:120px}.theme-toggle{right:10px;bottom:10px}}
+
+/* ===== PREMIUM PLAYER PROFILE ===== */
+.player-profile-modal{background:rgba(2,5,8,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:14px}
+.player-profile-box{position:relative;max-width:760px!important;width:100%!important;max-height:92vh;overflow:auto;padding:0!important;border:1px solid rgba(255,255,255,.12)!important;border-radius:26px!important;background:linear-gradient(145deg,rgba(24,29,38,.98),rgba(10,13,18,.98))!important;box-shadow:0 30px 90px rgba(0,0,0,.65),0 0 0 1px rgba(85,216,106,.06) inset}
+.player-profile-close{position:absolute;right:16px;top:14px;z-index:5;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.07);color:#fff;font-size:25px;line-height:1;cursor:pointer}
+.player-profile-hero{padding:34px 24px 24px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(85,216,106,.16),transparent 48%),linear-gradient(180deg,rgba(255,255,255,.045),transparent)}
+.player-profile-avatar-wrap{width:190px;height:255px;margin:8px auto 18px;display:grid;place-items:center;border-radius:22px;border:1px solid rgba(255,255,255,.11);background:radial-gradient(circle,rgba(85,216,106,.11),rgba(8,11,15,.75) 65%);box-shadow:0 20px 45px rgba(0,0,0,.35),inset 0 0 35px rgba(255,255,255,.025);overflow:hidden}
+.player-profile-avatar-wrap .skin-body-canvas{width:175px;height:245px;border:0;background:transparent;box-shadow:none}
+.player-profile-name{font-size:30px;font-weight:950;letter-spacing:.4px;margin:0 45px 7px}
+.player-profile-meta{color:var(--muted);font-size:14px}
+.player-profile-badges{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:14px}
+.profile-pill{padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.09);font-size:12px;font-weight:800}
+.profile-pill.green{color:#7bea8a;border-color:rgba(85,216,106,.25);background:rgba(85,216,106,.08)}
+.profile-pill.gold{color:#ffd86b;border-color:rgba(255,216,107,.22);background:rgba(255,216,107,.07)}
+.player-profile-body{padding:0 22px 24px}
+.premium-section-title{font-size:12px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);font-weight:900;margin:20px 2px 10px}
+.premium-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.premium-info{padding:14px;border-radius:15px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.075);min-width:0}
+.premium-info.full{grid-column:1/-1}
+.premium-info small{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.premium-info b{display:block;font-size:14px;word-break:break-word;line-height:1.45}
+.premium-history{display:flex;gap:7px;flex-wrap:wrap}.premium-history span{padding:7px 9px;border-radius:9px;background:rgba(85,216,106,.07);border:1px solid rgba(85,216,106,.15);font-size:12px}
+.premium-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.premium-actions .action{min-height:48px;border-radius:14px}
+.asia-row{min-height:58px}.asia-empty-name{font-weight:800;color:var(--muted)}
+@media(max-width:600px){.player-profile-box{max-height:94vh;border-radius:22px!important}.player-profile-hero{padding:28px 16px 20px}.player-profile-avatar-wrap{width:170px;height:235px}.player-profile-name{font-size:25px}.player-profile-body{padding:0 14px 18px}.premium-grid{grid-template-columns:1fr}.premium-info.full{grid-column:auto}.premium-actions{grid-template-columns:1fr}.asia-row{grid-template-columns:40px 40px minmax(120px,1fr)!important}.asia-row .leader-rank,.asia-row .leader-country{display:none}}
+
+
+/* ASIA RANKING ROW FORMAT */
+.asia-row{grid-template-columns:45px 44px minmax(150px,1fr) auto minmax(130px,auto);min-width:560px;cursor:pointer}
+.asia-row.asia-unassigned{cursor:default}
+.asia-player-name{min-width:150px}.asia-final-number{font-weight:900;color:#ffd86b;text-align:center}.asia-head-fallback{display:grid;place-items:center;font-size:11px}.asia-row:focus-visible{outline:2px solid #55d86a;outline-offset:-2px}
+@media(max-width:600px){.asia-row{grid-template-columns:40px 40px minmax(140px,1fr) auto minmax(120px,auto)!important;min-width:560px}.asia-row .leader-rank,.asia-row .leader-country{display:block}.asia-player-name{min-width:140px}}
+</style>
+<script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"MCPE Tier Test (0.15)",
+  "description":"Community Minecraft PE 0.15.10 PvP tier list, leaderboard, Asia rankings and tier testing website.",
+  "inLanguage":"en",
+  "author":{"@type":"Person","name":"ItzSparoW"},
+  "about":{"@type":"VideoGame","name":"Minecraft Pocket Edition 0.15.10"}
+}</script>
+  <link rel="canonical" href="https://itzsparow-mcpe.github.io/mcpe-tier-test/">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+</head>
+<body>
+<header>
+  <span class="badge">MCPE 0.15.10 • PROTOCOL 84</span>
+  <h1>MCPE Tier Test <span class="brand-version">(0.15)</span></h1>
+  <p class="subtitle">A community tier list for the classic Minecraft Pocket Edition 0.15.10 PvP era.</p>
+  <nav>
+    <button class="active" data-tab="players">Players</button>
+    <button data-tab="leaderboard">Leaderboard</button><button data-tab="asia">🏆 Best PvPer of Asia</button><button data-tab="dashboard">👤 Dashboard</button><button data-tab="notifications">🔔 Notifications</button><button data-tab="news">📰 News</button><button data-tab="rules">📜 Testing Rules</button><button data-tab="details">📖 Website Details</button><button id="testNav">Test Your Tier</button><button id="adminNav">Admin</button>
+  </nav>
+</header>
+
+<main>
+<section aria-labelledby="seo-about" style="margin-bottom:18px">
+<h2 id="seo-about" style="margin:0 0 8px;font-size:22px">Minecraft PE 0.15.10 PvP Tier List</h2>
+<p style="color:var(--muted);margin:0;line-height:1.6">MCPE Tier Test (0.15) is a community tier testing and ranking website for Minecraft Pocket Edition 0.15.10 (Protocol 84). Explore player tiers from S+ to D, leaderboard rankings, Asia PvP rankings, and submit your own mobile PvP tier test.</p>
+</section>
+<section id="players" class="tab">
+  <div class="topbar">
+    <div>
+      <h2>Player Tier List</h2>
+      <span style="color:var(--muted)">Maximum 30 players per tier • Only admins can add or move players.</span>
+    </div>
+    <div><input id="search" placeholder="Search players..."></div>
+  </div>
+  <div class="announcement">🏆 <b>MCPE Tier Test (0.15)</b> — Click any player card to view their full profile. Search, filter and compare ranked players.</div>
+   <div class="feature-toolbar"><input id="proSearch" placeholder="🔎 Search player, country or rank..."><select id="countryFilter"><option value="">🌍 All Countries</option></select><select id="modeFilter"><option value="">🎮 All PvP Modes</option><option>UHC</option><option>FFA</option><option>Combo</option><option>NoDebuff</option><option>Survival PvP</option><option>Other</option></select></div>
+   <div id="tierList"></div>
+</section>
+
+<section id="asia" class="tab" style="display:none">
+  <div class="topbar"><div><h2>🏆 BEST PVPER OF ASIA</h2><span style="color:var(--muted)">Asia ranking • positions 1–30 • Admin assigned</span></div></div>
+  <div class="box" style="margin-bottom:14px"><p style="margin:0;color:var(--muted)">Every position from <b style="color:var(--text)">#1 to #30</b> is shown. Unassigned positions keep the placeholder until an admin assigns a player.</p></div>
+  <div class="leaderboard-tier"><div class="leaderboard-tier-head"><div><div class="leaderboard-tier-title">BEST PVPER OF ASIA</div><small style="color:var(--muted)">30 ranking positions</small></div><div class="leaderboard-remain" id="asiaRemain">30 Remain</div></div><div id="asiaRankingList"></div></div>
+</section>
+
+<section id="dashboard" class="tab" style="display:none">
+  <div class="topbar"><div><h2>👤 Player Dashboard</h2><span style="color:var(--muted)">Check your tier-test status, profile and history.</span></div></div>
+  <div class="box" style="max-width:760px;margin:auto"><div class="form">
+    <label><b>Tier Test Email</b></label><input id="dashboardEmail" type="email" placeholder="Enter the email used for your tier test">
+    <button class="action primary" id="dashboardCheck">View Dashboard</button>
+  </div><div id="dashboardResult" style="margin-top:16px"></div></div>
+</section>
+<section id="notifications" class="tab" style="display:none">
+  <div class="topbar"><div><h2>🔔 Notifications</h2><span style="color:var(--muted)">Pending, approved and rejected tier-test updates.</span></div></div>
+  <div class="box" style="max-width:760px;margin:auto"><div class="form">
+    <label><b>Tier Test Email</b></label><input id="notificationEmail" type="email" placeholder="Enter your email used for your tier test">
+    <button class="action primary" id="notificationCheck">Check Notifications</button>
+  </div><div id="notificationResult" style="margin-top:16px"></div></div>
+</section>
+<section id="news" class="tab" style="display:none">
+  <div class="topbar"><div><h2>📰 Website News</h2><span style="color:var(--muted)">Latest updates from MCPE Tier Test.</span></div></div>
+  <div id="publicNewsList"></div>
+</section>
+<section id="rules" class="tab" style="display:none">
+  <div class="topbar"><div><h2>📜 Testing Rules</h2><span style="color:var(--muted)">Read these rules before requesting a tier test.</span></div></div>
+  <div class="box" style="max-width:760px;margin:auto"><h3>⚠️ Device & Control Rules</h3><p style="line-height:1.8;color:var(--muted)">• MCPE 0.15.10 mobile players only.<br>• ❌ Keymapper is not allowed.<br>• ❌ PC is not allowed.<br>• ❌ Windows 10 / Windows 8 is not allowed.<br>• ❌ Laptop is not allowed.<br>• Unsupported devices or control methods can result in disqualification.</p><h3>🧪 Tier Testing</h3><p style="line-height:1.8;color:var(--muted)">Submit accurate information, use your own Minecraft account and follow the tester's instructions. Admins/testers have the final decision on tier placement.</p></div>
+</section>
+<section id="details" class="tab" style="display:none">
+  <div class="topbar"><div><h2>📖 Website Details</h2><span style="color:var(--muted)">About MCPE Tier Test (0.15).</span></div></div>
+  <div class="box" style="max-width:760px;margin:auto"><h3>About the Website</h3><p style="line-height:1.8;color:var(--muted)">MCPE Tier Test (0.15) is a community project for Minecraft Pocket Edition 0.15.10 PvP players. It organizes tier testing, player profiles, rankings, announcements and community information in one place.</p><h3>👑 Website Creator</h3><p style="line-height:1.8;color:var(--muted)"><b style="color:var(--text)">ItzSparoW</b> is the creator of MCPE Tier Test (0.15), built for the classic MCPE 0.15.10 PvP community.</p><p><b>YouTube:</b> <a href="https://www.youtube.com/@RialZylos" target="_blank" rel="noopener">@RialZylos</a></p><h3>⚔️ Supported Version</h3><p style="color:var(--muted)">Minecraft PE 0.15.10 • Protocol 84</p></div>
+</section>
+<section id="test" class="tab" style="display:none">
+  <div class="topbar"><div><h2>Test Your Tier</h2><span style="color:var(--muted)">Submit your information for a manual MCPE 0.15.10 tier test.</span></div></div>
+  <div class="box" style="max-width:760px;margin:0 auto 14px;border-color:#7a5b16;background:#211b0b"><h3 style="margin-top:0;color:#ffd86b">⚠️ Testing Notice</h3><p style="color:#f0dfad;line-height:1.7;margin-bottom:0"><b>MCPE 0.15.10 mobile players only.</b><br>❌ No Keymapper &nbsp; ❌ No PC &nbsp; ❌ No Windows 10/Windows 8 &nbsp; ❌ No Laptop.<br>Using an unsupported device or control method may result in disqualification.</p></div>
+  <div class="box" style="max-width:760px;margin:auto"><div class="form">
+    <label><b>Minecraft Name *</b></label><input id="testName" placeholder="Your Minecraft username">
+    <label><b>Country *</b></label><input id="testCountry" placeholder="Your country">
+    <label><b>Main PvP Mode *</b></label><select id="testMode"><option>UHC</option><option>FFA</option><option>Combo</option><option>NoDebuff</option><option>Survival PvP</option><option>Other</option></select>
+    <label><b>PvP Specialty</b></label><select id="testSpecialty"><option>Sword</option><option>Bow</option><option>Combo</option><option>Movement</option><option>Overall</option></select>
+    <label><b>Experience</b></label><select id="testExperience"><option>New Player</option><option>1+ Year</option><option>2+ Years</option><option>3+ Years</option><option>Veteran</option></select>
+    <label><b>Your Minecraft Skin</b> <span style="color:var(--muted);font-weight:normal">(optional)</span></label>
+    <input id="testSkin" type="file" accept="image/png,image/jpeg,image/webp">
+    <small style="color:var(--muted)">Upload your Minecraft skin image (PNG recommended). The full uploaded skin is shown on your player profile; a head thumbnail is used on the leaderboard.</small>
+    <div id="skinPreview" style="display:none;margin-top:8px"></div>
+    <label><b>Discord</b></label><input id="testDiscord" placeholder="Discord username">
+    <label><b>Instagram</b></label><input id="testInstagram" placeholder="Instagram username">
+    <label><b>Telegram</b></label><input id="testTelegram" placeholder="Telegram username">
+    <label><b>Email *</b></label><input id="testEmail" type="email" placeholder="Your email address" required autocomplete="email">
+    <div style="padding:14px;border:1px solid #5b4610;background:#2a220d;border-radius:10px;color:#ffd86b"><b>⚠ IMPORTANT:</b> After submitting, you can contact me on Instagram, Discord, or <a href="mailto:itzsparow01@gmail.com" style="color:#7bea8a;font-weight:800">itzsparow01@gmail.com</a>. The email address is clickable.</div>
+    <button class="action primary" id="contactMeBtn">📩 Contact Me</button>
+    <button class="action primary" id="testSubmit">Submit Tier Test</button><div id="testMessage" style="color:var(--muted);min-height:20px"></div>
+  </div></div>
+</section>
+<div class="modal" id="contactModal"><div class="box"><button class="close" id="contactClose">×</button><h2>Contact Me</h2><p style="color:var(--muted)">Choose a contact method.</p><div class="form">
+<a class="action primary" style="text-align:center;text-decoration:none" href="https://instagram.com/unruly.ayan" target="_blank" rel="noopener">📸 Instagram — @unruly.ayan</a>
+<a class="action" style="text-align:center;text-decoration:none" href="https://discord.com/users/unruly.ayan" target="_blank" rel="noopener">💬 Discord — @unruly.ayan</a>
+<a class="action" style="text-align:center;text-decoration:none" href="mailto:itzsparow01@gmail.com">📧 Email — itzsparow01@gmail.com</a>
+<div style="font-size:12px;color:var(--muted)">The Discord link is ready to replace with your real profile link when you create the account.</div>
+</div></div></div>
+
+<section id="leaderboard" class="tab" style="display:none">
+  <h2>Leaderboard</h2><p style="color:var(--muted)">30 tested players maximum in every tier. Rankings are ordered by the tier position assigned by admins.</p>
+  <div class="stats"><div class="stat"><b id="playerCount">0</b><span>TESTED PLAYERS</span></div><div class="stat"><b>30</b><span>MAX / TIER</span></div><div class="stat"><b id="tierSlotCount">270</b><span>TOTAL SLOTS</span></div></div>
+  <div id="leaders"></div>
+</section>
+
+<section id="admin" class="tab" style="display:none">
+  <div class="topbar">
+    <div>
+      <h2>Admin Panel</h2>
+      <span style="color:var(--muted)">View and manage submitted tier tests and ranked players.</span>
+    </div>
+    <button class="action" id="adminLogout">Log out</button>
+  </div>
+  <div class="box" id="adminNewsBox" style="margin-bottom:18px"><h3>📰 Manage Website News</h3><div class="form"><input id="adminNewsTitle" placeholder="News title"><textarea id="adminNewsBody" placeholder="Write your news or announcement..."></textarea><button class="action primary" id="publishNews">Publish News</button></div><div id="adminNewsList" style="margin-top:14px"></div></div>
+  <div id="adminContent"></div>
+</section>
+
+</main>
+
+
+<div class="modal" id="adminLoginModal"><div class="box">
+<button class="close" id="adminLoginClose">×</button>
+<h2>Admin Login</h2>
+<p style="color:var(--muted)">Enter your admin password to manage tier tests and ranked players.</p>
+<div class="form">
+<input id="adminPassword" type="password" placeholder="Admin password">
+<button class="action primary" id="adminLoginBtn">Login</button>
+<div id="adminLoginMsg" style="color:var(--muted);min-height:20px"></div>
+</div>
+</div></div>
+
+<div class="modal" id="modal"><div class="box">
+<button class="close" id="close">×</button><h2>Add Player</h2>
+<div class="form"><input id="newName" placeholder="Minecraft username"><select id="newTier"><option>S+</option><option>S</option><option>A+</option><option>A</option><option>B+</option><option>B</option><option>C+</option><option>C</option><option>D</option></select><button class="action primary" id="save">Add to Tier List</button></div>
+</div></div>
+
+<div class="modal player-profile-modal" id="playerProfileModal"><div class="box player-profile-box">
+<button class="player-profile-close" id="playerProfileClose" aria-label="Close profile">×</button><div id="playerProfileContent"></div>
+</div></div>
+
+<footer>MCPE Tier Test (0.15) • Community project • Tier testing • Built for mobile & desktop</footer>
+<button class="action theme-toggle" id="themeToggle">☀️ Theme</button><div class="toast" id="toast"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyBvIgVuEfPryy4FXQVgHIOqnqjyuol1xwA",
+  authDomain: "mcpe-tier-test.firebaseapp.com",
+  projectId: "mcpe-tier-test",
+  storageBucket: "mcpe-tier-test.firebasestorage.app",
+  messagingSenderId: "373232938957",
+  appId: "1:373232938957:web:cd543bac8c56cba03e9e84"
+};
+firebase.initializeApp(firebaseConfig);
+const firebaseAuth = firebase.auth();
+const firebaseDb = firebase.firestore();
+</script>
+<script>
+const tiers=[
+  ["S+","Elite","Top-level players"],["S","God","Exceptional"],["A+","High Tier","Outstanding"],["A","Excellent","Very strong"],
+  ["B+","Advanced","Strong"],["B","Good","Above average"],["C+","Developing+","Developing"],["C","Average","Casual competitive"],["D","Beginner","Needs improvement"]
+];
+const TIER_ORDER=tiers.map(x=>x[0]);
+let players=[];
+const MAX_PER_TIER=30;
+function tierFull(t){return players.filter(p=>p[1]===t).length>=MAX_PER_TIER;}
+
+function renderPlayers(filter=""){
+ const root=document.getElementById("tierList"); root.innerHTML="";
+ tiers.forEach(([t,name,desc])=>{
+   const section=document.createElement("div"); section.className="tier"; section.dataset.tier=t;
+   section.innerHTML=`<div class="tier-head"><div class="tier-label">${t}</div><div class="tier-info"><b>${name}</b><small>${desc}</small></div></div><div class="cards" data-tier="${t}"></div>`;
+   const cards=section.querySelector(".cards");
+   players.filter(p=>p[1]===t && p[0].toLowerCase().includes(filter.toLowerCase())).forEach(p=>{
+     const c=document.createElement("div"); c.className="card"; c.draggable=true;c.dataset.name=p[0];
+     const skin=p[2]||"", rank=p[4]||"", profile=p[3]||{};
+     c.classList.add("player-card-click");
+     c.innerHTML=`${skin?`<img class="avatar" src="${skin}" alt="${escapeHtml(p[0])} skin" style="object-fit:contain;padding:4px">`:`<div class="avatar">${p[0].slice(0,2).toUpperCase()}</div>`}<b>${escapeHtml(p[0])}</b><small>${escapeHtml(p[1])} Tier</small>${rank?`<span class="rank-badge">${escapeHtml(rank)}</span>`:""}<div class="click-hint">Tap to view profile</div>`;
+     c.onclick=()=>showPlayerProfile(p);
+     c.addEventListener("dragstart",e=>e.dataTransfer.setData("text/plain",p[0]));
+     cards.appendChild(c);
+   });
+   if(!cards.children.length)cards.innerHTML='<div class="empty">Drop players here</div>';
+   cards.addEventListener("dragover",e=>e.preventDefault());
+   cards.addEventListener("drop",e=>{e.preventDefault();const n=e.dataTransfer.getData("text/plain");const p=players.find(x=>x[0]===n);if(p){if(p[1]!==t&&tierFull(t)){alert(t+" Tier is full! Maximum 30 players are allowed.");return;}p[1]=t;save();renderPlayers(document.getElementById("search").value);}});
+   root.appendChild(section);
+ });
+ document.getElementById("playerCount").textContent=players.length;
+ renderLeaders();
+}
+function renderSimple(id,data){
+ const root=document.getElementById(id);root.innerHTML="";
+ tiers.forEach(([t])=>{let vals=data.filter(x=>x[0]===t);root.innerHTML+=`<div class="tier" data-tier="${t}"><div class="tier-head"><div class="tier-label">${t}</div><div class="cards">${vals.map(x=>`<div class="card">${x[2]?`<img class="avatar" src="${x[2]}" alt="${escapeHtml(x[0])} skin" style="object-fit:contain;padding:4px">`:`<div class="avatar">${x[1].slice(0,2).toUpperCase()}</div>`}<b>${x[1]}</b><small>${t} Tier</small></div>`).join("")||'<div class="empty">No entries</div>'}</div></div>`});
+}
+function skinHeadHTML(src,name){return `<div class="leader-head" title="${escapeHtml(name)} skin" style="background-image:url('${src}');background-repeat:no-repeat;background-size:288px 288px;background-position:-36px -36px"></div>`;}
+function renderLeaders(){
+ const root=document.getElementById("leaders"); if(!root)return;
+ root.innerHTML=TIER_ORDER.map(t=>{
+   const arr=players.filter(p=>p[1]===t);
+   const remaining=Math.max(0,MAX_PER_TIER-arr.length);
+   return `<div class="leaderboard-tier" data-tier="${t}">
+     <div class="leaderboard-tier-head"><div><div class="leaderboard-tier-title">${t} player ranking</div><small style="color:var(--muted)">Tested ${arr.length} / ${MAX_PER_TIER}</small></div><div class="leaderboard-remain">Remain ${remaining}</div></div>
+     ${arr.length?arr.map((p,i)=>{const pr=p[3]||{},country=pr.country||"Unknown",head=p[2]?skinHeadHTML(p[2],p[0]):`<div class="leader-head" style="display:grid;place-items:center;font-size:12px">${escapeHtml(p[0].slice(0,2).toUpperCase())}</div>`;return `<div class="leader-row" data-player-name="${escapeHtml(p[0])}" title="Tap to view profile • Swipe left/right to see all details"><div class="leader-number">${i+1}.</div>${head}<div><b>${escapeHtml(p[0])}</b><small style="display:block;color:var(--muted);font-size:11px">Tap to view profile</small></div><div class="leader-rank">${escapeHtml(p[4]||"—")}</div><div class="leader-country">${flagFor(country)} ${escapeHtml(country)}</div></div>`}).join(""):`<div class="empty">No tested players in ${t} yet.</div>`}
+   </div>`;
+ }).join("");
+ root.querySelectorAll(".leader-row[data-player-name]").forEach(row=>{row.addEventListener("click",()=>{const p=players.find(x=>x[0]===row.dataset.playerName);if(p)showPlayerProfile(p);});});
+ const total=MAX_PER_TIER*TIER_ORDER.length;
+ document.getElementById("tierSlotCount").textContent=total;
+}
+
+function renderSkinFullBody(canvas,src){const ctx=canvas.getContext("2d"),img=new Image();img.onload=()=>{const w=img.naturalWidth,h=img.naturalHeight;if(w<64||h<32){canvas.style.display="none";return;}const scale=Math.max(1,Math.floor(Math.min(24,canvas.width/24)));canvas.width=24*scale;canvas.height=40*scale;ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,canvas.width,canvas.height);const draw=(sx,sy,sw,sh,dx,dy,dw,dh)=>ctx.drawImage(img,sx,sy,sw,sh,dx*scale,dy*scale,dw*scale,dh*scale);draw(8,8,8,8,8,1,8,8);draw(40,8,8,8,8,1,8,8);draw(20,20,8,12,8,9,8,12);draw(20,36,8,12,8,9,8,12);draw(44,20,4,12,4,9,4,12);draw(44,36,4,12,4,9,4,12);draw(36,52,4,12,16,9,4,12);draw(52,52,4,12,16,9,4,12);draw(4,20,4,12,8,21,4,12);draw(4,36,4,12,8,21,4,12);ctx.fillStyle="rgba(255,255,255,.10)";ctx.fillRect(5*scale,35*scale,14*scale,1*scale);canvas.style.display="block";};img.onerror=()=>canvas.style.display="none";img.src=src;}
+function showPlayerProfile(p){
+ const root=document.getElementById("playerProfileContent");
+ if(!root)return;
+ const pr=p[3]||{},country=pr.country||"Unknown",skin=p[2]||"",tier=p[1]||"Unranked",custom=p[4]||"Not assigned",asia=p[5]?"#"+p[5]:"Not assigned";
+ root.innerHTML=`
+ <div class="player-profile-hero">
+   <div class="player-profile-avatar-wrap">${skin?`<canvas id="profileSkinCanvas" class="skin-body-canvas" width="175" height="245"></canvas>`:`<div style="color:var(--muted);font-weight:800">NO SKIN</div>`}</div>
+   <h2 class="player-profile-name">${escapeHtml(p[0])}</h2>
+   <div class="player-profile-meta">${flagFor(country)} ${escapeHtml(country)} <span style="opacity:.55">•</span> ${escapeHtml(tier)} Tier</div>
+   <div class="player-profile-badges">
+     ${pr.verified?`<span class="profile-pill green">✓ VERIFIED PLAYER</span>`:""}
+     <span class="profile-pill">🏅 ${escapeHtml(custom)}</span>
+     ${p[5]?`<span class="profile-pill gold">🏆 ASIA ${escapeHtml(asia)}</span>`:""}
+   </div>
+ </div>
+ <div class="player-profile-body">
+   <div class="premium-section-title">Player information</div>
+   <div class="premium-grid">
+     <div class="premium-info"><small>Main Tier</small><b>${escapeHtml(tier)}</b></div>
+     <div class="premium-info"><small>Custom Rank</small><b>${escapeHtml(custom)}</b></div>
+     <div class="premium-info"><small>Country</small><b>${flagFor(country)} ${escapeHtml(country)}</b></div>
+     <div class="premium-info"><small>Asia Ranking</small><b>${escapeHtml(asia)}</b></div>
+     <div class="premium-info"><small>PvP Mode</small><b>${escapeHtml(pr.mode||"Not provided")}</b></div>
+     <div class="premium-info"><small>Specialty</small><b>${escapeHtml(pr.specialty||"Not provided")}</b></div>
+     <div class="premium-info"><small>Experience</small><b>${escapeHtml(pr.experience||"Not provided")}</b></div>
+     <div class="premium-info"><small>Email</small><b>${escapeHtml(pr.email||"Not provided")}</b></div>
+     <div class="premium-info"><small>Discord</small><b>${escapeHtml(pr.discord||"Not provided")}</b></div>
+     <div class="premium-info"><small>Instagram</small><b>${escapeHtml(pr.instagram||"Not provided")}</b></div>
+     <div class="premium-info"><small>Telegram</small><b>${escapeHtml(pr.telegram||"Not provided")}</b></div>
+     <div class="premium-info full"><small>Tier History</small><div class="premium-history">${(pr.history||[]).map(h=>`<span>${escapeHtml(h)}</span>`).join("")||"<span>No history</span>"}</div></div>
+   </div>
+   <div class="premium-actions">
+     <button class="action primary" data-profile-name="${encodeURIComponent(String(p[0]))}" onclick="copyPlayerLink(this.dataset.profileName)">🔗 Share Profile</button>
+     <button class="action" data-profile-name="${encodeURIComponent(String(p[0]))}" onclick="requestRetest(this.dataset.profileName)">🔄 Request Retest</button>
+   </div>
+ </div>`;
+ document.getElementById("playerProfileModal").classList.add("show");
+ if(skin)renderSkinFullBody(document.getElementById("profileSkinCanvas"),skin);
+}
+document.getElementById("playerProfileClose").onclick=()=>document.getElementById("playerProfileModal").classList.remove("show");
+document.getElementById("playerProfileModal").addEventListener("click",e=>{if(e.target.id==="playerProfileModal")e.currentTarget.classList.remove("show")});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.getElementById("playerProfileModal")?.classList.remove("show")});
+
+function save(){localStorage.setItem("mcpeTierPlayers",JSON.stringify(players));}
+function changePlayerTier(i,t){if(!adminLoggedIn||!players[i])return;if(t&&players[i][1]!==t&&tierFull(t))return alert(t+" Tier is full! Maximum 30 players are allowed.");players[i][1]=t||"";save();renderPlayers();renderAdmin();}
+function changePlayerRank(i,r){if(!adminLoggedIn||!players[i])return;players[i][4]=(r||"").trim();save();renderPlayers();renderAdmin();}
+function changeAsiaRank(i,v){if(!adminLoggedIn||!players[i])return;const rank=String(v||"").trim();if(rank===""){players[i][5]="";save();renderAsiaRanking();renderAdmin();return;}const n=Number(rank);if(!Number.isInteger(n)||n<1||n>30){alert("Asia Rank must be a number from 1 to 30.");renderAdmin();return;}const other=players.findIndex((p,idx)=>idx!==i&&Number(p[5])===n);if(other!==-1)players[other][5]="";players[i][5]=n;save();renderAsiaRanking();renderAdmin();}
+function saveAnnouncement(){if(!adminLoggedIn)return;const text=(document.getElementById("announcementText")?.value||"").trim();localStorage.setItem("mcpeAnnouncement",text);if(window.firebaseSaveAnnouncement)window.firebaseSaveAnnouncement(text);const a=document.querySelector(".announcement");if(a)a.innerHTML=text?"📢 "+escapeHtml(text):"";alert("Announcement saved.");}
+function copyPlayerLink(encodedName){const name=decodeURIComponent(encodedName||"");const url=location.href.split("#")[0]+"#player="+encodeURIComponent(name);if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(url).then(()=>toast("Profile link copied!")).catch(()=>prompt("Copy this profile link:",url));}else prompt("Copy this profile link:",url);}
+function requestRetest(encodedName){const name=decodeURIComponent(encodedName||"");const subject=encodeURIComponent("MCPE Tier Test Retest Request - "+name);const body=encodeURIComponent("Hello MCPE Tier Test team,\n\nI would like to request a retest for my player profile: "+name+".\n\nThank you.");location.href="mailto:itzsparow01@gmail.com?subject="+subject+"&body="+body;}
+function deletePlayer(i){if(!adminLoggedIn||!players[i])return;const name=players[i][0];if(!confirm("Delete "+name+" from the player list?"))return;players.splice(i,1);save();renderPlayers();renderAdmin();}
+const saved=localStorage.getItem("mcpeTierPlayers");if(saved){try{players=JSON.parse(saved);players=Array.isArray(players)?players:[]}catch(e){players=[];}}
+// Firebase is the source of truth. LocalStorage is only an offline cache.
+renderPlayers();if(localStorage.getItem('mcpeAnnouncement')){const a=document.querySelector('.announcement');if(a)a.innerHTML='📢 '+escapeHtml(localStorage.getItem('mcpeAnnouncement'));}
+
+let tierTests = JSON.parse(localStorage.getItem("mcpeTierTests") || "[]");
+function saveTierTests(){localStorage.setItem("mcpeTierTests",JSON.stringify(tierTests));}
+
+function showTab(tabId){
+  document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));
+  document.querySelectorAll(".tab").forEach(x=>x.style.display="none");
+  const tab=document.getElementById(tabId);
+  if(tab) tab.style.display="block";
+  const navBtn=document.querySelector(`nav button[data-tab="${tabId}"]`);
+  if(navBtn) navBtn.classList.add("active");
+}
+document.getElementById("testNav").onclick=()=>showTab("test");
+document.querySelectorAll('nav button[data-tab]').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+document.getElementById("contactMeBtn").onclick=()=>document.getElementById("contactModal").classList.add("show");
+document.getElementById("contactClose").onclick=()=>document.getElementById("contactModal").classList.remove("show");
+document.getElementById("testSkin").onchange=function(){
+ const f=this.files[0], box=document.getElementById("skinPreview");
+ if(!f){box.style.display="none";box.innerHTML="";return;}
+ const r=new FileReader(); r.onload=()=>{box.style.display="block";box.innerHTML=`<img src="${r.result}" alt="Skin preview" style="width:180px;height:220px;object-fit:contain;background:#090b0f;border:1px solid var(--border);border-radius:10px;padding:6px">`;}; r.readAsDataURL(f);
+};
+
+async function sendAutomaticTierTestEmail(d){
+  try{
+    const body=new URLSearchParams();
+    body.append("_subject","New MCPE Tier Test Submission - "+d.name);
+    body.append("_template","table");
+    body.append("_captcha","false");
+    body.append("Minecraft Name",d.name);
+    body.append("Country",d.country);
+    body.append("Applicant Email",d.email);
+    body.append("PvP Mode",d.mode);
+    body.append("Specialty",d.specialty||"Not provided");
+    body.append("Experience",d.experience||"Not provided");
+    body.append("Discord",d.discord||"Not provided");
+    body.append("Instagram",d.instagram||"Not provided");
+    body.append("Telegram",d.telegram||"Not provided");
+    body.append("Submitted At",d.submittedAt);
+    const r=await fetch("https://formsubmit.co/ajax/itzsparow01@gmail.com",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded","Accept":"application/json"},body:body.toString()});
+    return r.ok;
+  }catch(e){ return false; }
+}
+
+function sendApplicantConfirmationEmail(d){
+  try{
+    let iframe=document.getElementById("formsubmitApplicantFrame");
+    if(!iframe){
+      iframe=document.createElement("iframe");
+      iframe.id="formsubmitApplicantFrame";
+      iframe.name="formsubmitApplicantFrame";
+      iframe.style.display="none";
+      document.body.appendChild(iframe);
+    }
+    const form=document.createElement("form");
+    form.method="POST";
+    form.action="https://formsubmit.co/itzsparow01@gmail.com";
+    form.target="formsubmitApplicantFrame";
+    form.style.display="none";
+    const fields={
+      _subject:"MCPE Tier Test Submission Received",
+      _captcha:"true",
+      _template:"table",
+      _replyto:d.email,
+      _autoresponse:"Hi "+d.name+",\n\nYour MCPE Tier Test submission has been received successfully. We will review your application and update your test status on the website.\n\nMinecraft Name: "+d.name+"\nCountry: "+d.country+"\nPvP Mode: "+d.mode+"\n\nThank you for applying to MCPE Tier Test (0.15).\n\nItzSparoW",
+      "Minecraft Name":d.name,
+      "Country":d.country,
+      "email":d.email,
+      "PvP Mode":d.mode,
+      "Specialty":d.specialty||"Not provided",
+      "Experience":d.experience||"Not provided",
+      "Discord":d.discord||"Not provided",
+      "Instagram":d.instagram||"Not provided",
+      "Telegram":d.telegram||"Not provided",
+      "Submitted At":d.submittedAt
+    };
+    Object.keys(fields).forEach(k=>{
+      const input=document.createElement("input");
+      input.type="hidden";
+      input.name=k;
+      input.value=fields[k];
+      form.appendChild(input);
+    });
+    document.body.appendChild(form);
+    form.submit();
+    setTimeout(()=>form.remove(),3000);
+    return true;
+  }catch(e){ return false; }
+}
+
+document.getElementById("testSubmit").onclick=()=>{
+ const name=document.getElementById("testName").value.trim(), country=document.getElementById("testCountry").value.trim(), email=document.getElementById("testEmail").value.trim(), msg=document.getElementById("testMessage");
+ if(!name||!country||!email){msg.textContent="Email is required. Please fill in Minecraft Name, Country and Email.";return;}
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){msg.textContent="Please enter a valid email address.";return;}
+ if(tierTests.some(x=>x.name.toLowerCase()===name.toLowerCase()&&x.status==="Pending")){msg.textContent="You already have a pending tier test.";return;}
+ const skinFile=document.getElementById("testSkin").files[0];
+ const submitTest=(skin)=>{
+  const mode=document.getElementById("testMode").value,specialty=document.getElementById("testSpecialty").value,experience=document.getElementById("testExperience").value,discord=document.getElementById("testDiscord").value.trim(),instagram=document.getElementById("testInstagram").value.trim(),telegram=document.getElementById("testTelegram").value.trim();
+  const submittedAt=new Date().toISOString();
+  tierTests.push({name,country,email,mode,specialty,experience,discord,instagram,telegram,skin:skin||"",status:"Pending",submittedAt,notifications:[{title:"Tier Test Submitted",message:"Your tier testing application has been successfully registered and is currently pending review. Our team will review your information and determine your appropriate tier. Please keep your contact information available in case we need to reach you.",status:"Pending",createdAt:submittedAt,unread:true,profileUrl:""}]});
+  saveTierTests();
+  msg.textContent="Tier test submitted. Sending the notification email…";
+  const applicantEmailSent=sendApplicantConfirmationEmail({name,country,email,mode,specialty,experience,discord,instagram,telegram,submittedAt});
+  sendAutomaticTierTestEmail({name,country,email,mode,specialty,experience,discord,instagram,telegram,submittedAt}).then(ok=>{
+    msg.innerHTML=ok ? (applicantEmailSent ? 'Tier test submitted successfully! A confirmation email has been sent to your email address.' : 'Tier test submitted successfully!') : 'Tier test saved successfully, but the notification email could not be sent. <a href="mailto:itzsparow01@gmail.com?subject=MCPE%20Tier%20Test%20Submission" style="color:#7bea8a;font-weight:800">Open Send Email page</a>.';
+  });
+  ["testName","testCountry","testEmail","testDiscord","testInstagram","testTelegram"].forEach(id=>document.getElementById(id).value="");
+  document.getElementById("testSkin").value=""; document.getElementById("skinPreview").style.display="none"; document.getElementById("skinPreview").innerHTML="";
+ };
+ if(skinFile){const reader=new FileReader();reader.onload=()=>submitTest(reader.result);reader.readAsDataURL(skinFile);}else submitTest("");
+};
+
+document.getElementById("search").oninput=e=>renderPlayers(e.target.value);
+document.querySelectorAll("nav button[data-tab]").forEach(btn=>btn.onclick=()=>showTab(btn.dataset.tab));
+
+
+// Firebase Authentication replaces the old client-side admin password.
+let adminLoggedIn = sessionStorage.getItem("mcpeAdminLoggedIn")==="1";
+let firebaseUser = null;
+let firebaseAdminReady = false;
+function firebaseAdminUid(){ return firebaseUser ? firebaseUser.uid : ""; }
+function firebaseSetStatus(text){ const el=document.getElementById("adminLoginMsg"); if(el) el.textContent=text||""; }
+firebaseAuth.onAuthStateChanged(async user=>{
+  firebaseUser=user||null;
+  firebaseAdminReady=false;
+  if(user){
+    try{
+      const snap=await firebaseDb.collection("admins").doc(user.uid).get();
+      firebaseAdminReady=snap.exists && snap.data().enabled!==false;
+    }catch(e){ firebaseAdminReady=false; console.warn("Firebase admin check failed",e); }
+    adminLoggedIn=firebaseAdminReady;
+    if(adminLoggedIn) sessionStorage.setItem("mcpeAdminLoggedIn","1"); else sessionStorage.removeItem("mcpeAdminLoggedIn");
+    if(document.getElementById("adminContent")) renderAdmin();
+  }else{
+    adminLoggedIn=false; sessionStorage.removeItem("mcpeAdminLoggedIn");
+  }
+});
+
+function renderAdmin(){
+  const root=document.getElementById("adminContent");
+  if(!adminLoggedIn){root.innerHTML='<div class="box"><h3>Admin login required</h3><p style="color:var(--muted)">Log in to view tier-test submissions and ranked players.</p></div>';return;}
+  root.innerHTML=`
+    <div class="box" style="margin-bottom:18px"><h3>🛡️ Admin Controls</h3><div class="form"><label>Admin Role</label><select id="adminRole"><option>Owner</option><option>Admin</option><option>Tester</option><option>Moderator</option></select><input id="announcementText" placeholder="Site announcement"><button class="action primary" onclick="saveAnnouncement()">Save Announcement</button></div></div>
+    <div class="box" style="margin-bottom:18px"><h3>Admin: Add Player</h3><div class="form"><input id="adminPlayerName" placeholder="Minecraft username"><input id="adminPlayerRank" placeholder="Custom rank (e.g. HT1, HT2)"><select id="adminPlayerTier">${TIER_ORDER.map(t=>`<option>${t}</option>`).join("")}</select><button class="action primary" onclick="adminAddPlayer()">Add Player</button></div></div>
+    <div class="box" style="margin-bottom:18px"><h3>Tier Test Submissions (${tierTests.length})</h3>${tierTests.length?tierTests.map((x,i)=>`<div class="admin-card"><h3 style="margin:0">${escapeHtml(x.name)} <span style="color:#ffd86b">• ${escapeHtml(x.status)}</span></h3><div class="admin-card-grid" style="margin-top:12px"><div><b>Country:</b> ${escapeHtml(x.country)}</div><div><b>Email:</b> <a href="mailto:${escapeHtml(x.email)}">${escapeHtml(x.email)}</a></div><div><b>Discord:</b> ${escapeHtml(x.discord||"Not provided")}</div><div><b>Instagram:</b> ${escapeHtml(x.instagram||"Not provided")}</div><div><b>Telegram:</b> ${escapeHtml(x.telegram||"Not provided")}</div><div><b>Mode:</b> ${escapeHtml(x.mode)}</div><div><b>Specialty:</b> ${escapeHtml(x.specialty)}</div><div><b>Experience:</b> ${escapeHtml(x.experience)}</div><div><b>Skin:</b> ${x.skin?`<a href="${x.skin}" target="_blank" rel="noopener">View uploaded skin</a>`:"Not provided"}</div></div>${String(x.status||"").trim().toLowerCase()==="pending"?`<div class="submission-actions" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid var(--border)"><input id="testRank${i}" placeholder="Custom rank (e.g. HT1, HT2)"><input id="testAsia${i}" type="number" min="1" max="30" placeholder="Asia rank 1–30"><select id="testTier${i}">${TIER_ORDER.map(t=>`<option>${t}</option>`).join("")}</select><button type="button" class="action primary approve-btn" onclick="approveTest(${i})">✅ Approve</button><button type="button" class="action danger" onclick="window.rejectTest(${i})">❌ Reject</button></div>`:String(x.status||"").toLowerCase().startsWith("approved")?(()=>{const pp=players.find(q=>q[0].toLowerCase()===x.name.toLowerCase());return pp?`<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px"><b>Asia Rank:</b><input type="number" min="1" max="30" value="${pp[5]||""}" placeholder="1-30" onchange="changeAsiaRank(${players.indexOf(pp)},this.value)"><span style="color:var(--muted);font-size:12px">Leave blank to remove.</span></div>`:""})():""}</div>`).join(""):'<p style="color:var(--muted)">No tier test submissions yet.</p>'}</div>
+    <div class="stats"><div class="stat"><b>${players.length}</b><span>TESTED PLAYERS</span></div><div class="stat"><b>${TIER_ORDER.reduce((n,t)=>n+players.filter(p=>p[1]===t).length,0)}</b><span>RANKED PLAYERS</span></div><div class="stat"><b>${TIER_ORDER.reduce((n,t)=>n+Math.max(0,MAX_PER_TIER-players.filter(p=>p[1]===t).length),0)}</b><span>SLOTS REMAINING</span></div></div>
+    <div class="box"><h3>Current Ranked Players</h3><div style="overflow-x:auto"><table class="admin-table"><thead><tr><th>Name</th><th>Country</th><th>Tier</th><th>Custom Rank</th><th>Asia Rank</th><th>Action</th></tr></thead><tbody>${players.map((p,i)=>{const pr=p[3]||{};return `<tr><td><b>${escapeHtml(p[0])}</b></td><td>${flagFor(pr.country)} ${escapeHtml(pr.country||"Unknown")}</td><td><select onchange="changePlayerTier(${i},this.value)"><option value="" ${!p[1]?"selected":""}>Unranked</option>${TIER_ORDER.map(t=>`<option ${p[1]===t?"selected":""}>${t}</option>`).join("")}</select></td><td><input value="${escapeHtml(p[4]||"")} placeholder="HT1" onchange="changePlayerRank(${i},this.value)" style="min-width:90px"></td><td><input type="number" min="1" max="30" value="${p[5]||""}" placeholder="1-30" onchange="changeAsiaRank(${i},this.value)" style="width:90px"></td><td><button class="action danger" onclick="deletePlayer(${i})">Delete</button></td></tr>`}).join("")}</tbody></table></div></div>`;
+  const a=document.getElementById("announcementText");if(a)a.value=localStorage.getItem("mcpeAnnouncement")||"";
+}
+
+function adminAddPlayer(){if(!adminLoggedIn)return;const n=document.getElementById("adminPlayerName").value.trim(),r=document.getElementById("adminPlayerRank").value.trim(),t=document.getElementById("adminPlayerTier").value;if(!n)return alert("Enter a Minecraft username.");if(players.some(p=>p[0].toLowerCase()===n.toLowerCase()))return alert("Player already exists.");if(tierFull(t))return alert(t+" Tier is full! Maximum 30 players are allowed.");players.push([n,t,"",{},r]);save();renderPlayers();document.getElementById("adminPlayerName").value="";document.getElementById("adminPlayerRank").value="";renderAdmin();}
+window.approveTest=function(i){if(!adminLoggedIn)return;const x=tierTests[i],t=document.getElementById("testTier"+i).value,r=document.getElementById("testRank"+i).value.trim(),ar=(document.getElementById("testAsia"+i)?.value||"").trim();if(ar&&(Number(ar)<1||Number(ar)>30||!Number.isInteger(Number(ar))))return alert("Asia rank must be a whole number from 1 to 30.");if(tierFull(t))return alert(t+" Tier is full! Maximum 30 players are allowed.");if(players.some(p=>p[0].toLowerCase()===x.name.toLowerCase()))return alert("That player already exists on the tier list.");const profile={country:x.country,email:x.email,mode:x.mode,specialty:x.specialty,experience:x.experience,discord:x.discord,instagram:x.instagram,telegram:x.telegram,verified:true,history:[t+(r?' • '+r:'')]};if(ar){const other=players.findIndex(q=>Number(q[5])===Number(ar));if(other>=0)players[other][5]="";}players.push([x.name,t,x.skin||"",profile,r,ar?Number(ar):""]);save();x.status="Approved - "+t+" Tier";x.asiaRank=ar?Number(ar):"";x.assignedRank=r;x.approvedAt=new Date().toISOString();x.notifications=x.notifications||[];x.notifications.push({title:"Tier Test Approved!",message:"Congratulations! Your tier test has been reviewed and approved. Your profile is now live on MCPE Tier Test (0.15). Keep practicing and improving your PvP skills!",status:"Approved",tier:t,rank:r,createdAt:new Date().toISOString(),unread:true,profileUrl:location.href.split("#")[0]+"#player="+encodeURIComponent(x.name)});saveTierTests();renderPlayers();renderAdmin();};
+window.rejectTest=function(i){
+  if(!adminLoggedIn){alert("Admin login required.");return;}
+  i=Number(i);
+  if(!Number.isInteger(i)||i<0||i>=tierTests.length){alert("Submission not found.");return;}
+  const x=tierTests[i];
+  if(!x){alert("Submission not found.");return;}
+  const status=String(x.status||"").trim().toLowerCase();
+  if(status!=="pending"){alert("This submission has already been processed.");renderAdmin();return;}
+  x.status="Rejected";
+  x.rejectedAt=new Date().toISOString();
+  x.notifications=Array.isArray(x.notifications)?x.notifications:[];
+  x.notifications.push({title:"Tier Test Update",message:"Unfortunately, your current tier test application was not approved. You may improve your PvP skills and request another test later.",status:"Rejected",createdAt:new Date().toISOString(),unread:true,profileUrl:""});
+  saveTierTests();
+  renderAdmin();
+  alert("Tier test request rejected successfully.");
+};
+
+function loadWebsiteNews(){
+ const news=JSON.parse(localStorage.getItem("mcpeWebsiteNews")||"[]");
+ const card=n=>`<div class="admin-card"><h3 style="margin:0 0 6px">${escapeHtml(n.title)}</h3><small style="color:var(--muted)">${new Date(n.date).toLocaleString()}</small><p style="white-space:pre-wrap;line-height:1.7">${escapeHtml(n.body)}</p>${adminLoggedIn?`<button class="action danger" onclick="deleteWebsiteNews(${n.id})">Delete</button>`:""}</div>`;
+ const pub=document.getElementById("publicNewsList"); if(pub)pub.innerHTML=news.length?news.map(card).join(""):"<div class='box'><p style='color:var(--muted)'>No news published yet.</p></div>";
+ const adm=document.getElementById("adminNewsList"); if(adm)adm.innerHTML=news.length?news.map(card).join(""):"<p style='color:var(--muted)'>No published news.</p>";
+}
+window.deleteWebsiteNews=function(id){if(!adminLoggedIn)return;let n=JSON.parse(localStorage.getItem("mcpeWebsiteNews")||"[]");n=n.filter(x=>x.id!==id);localStorage.setItem("mcpeWebsiteNews",JSON.stringify(n));loadWebsiteNews();};
+document.getElementById("publishNews")?.addEventListener("click",()=>{if(!adminLoggedIn)return alert("Admin login required.");const title=document.getElementById("adminNewsTitle").value.trim(),body=document.getElementById("adminNewsBody").value.trim();if(!title||!body)return alert("Enter a news title and message.");const n=JSON.parse(localStorage.getItem("mcpeWebsiteNews")||"[]");n.unshift({id:Date.now(),title,body,date:new Date().toISOString()});localStorage.setItem("mcpeWebsiteNews",JSON.stringify(n));document.getElementById("adminNewsTitle").value="";document.getElementById("adminNewsBody").value="";loadWebsiteNews();alert("News published successfully.");});
+function renderAsiaRanking(){
+ const root=document.getElementById("asiaRankingList");
+ if(!root)return;
+ let assigned=0,html="";
+ for(let n=1;n<=30;n++){
+   const p=players.find(x=>Number(x[5])===n);
+   if(p){
+     assigned++;
+     const pr=p[3]||{},country=pr.country||"Unknown";
+     const head=p[2]?`<img class="asia-head" src="${p[2]}" alt="${escapeHtml(p[0])} skin">`:`<div class="asia-head asia-head-fallback">${escapeHtml(p[0].slice(0,2).toUpperCase())}</div>`;
+     // Format: 6. [skin head] PlayerName Rank Country
+     html+=`<div class="asia-row" role="button" tabindex="0" aria-label="View ${escapeHtml(p[0])} profile"><div class="asia-number">${n}.</div>${head}<div class="asia-player-name"><b>${escapeHtml(p[0])}</b></div><div class="leader-rank">${escapeHtml(p[4]||"Not assigned")}</div><div class="leader-country">${flagFor(country)} ${escapeHtml(country)}</div></div>`;
+   }else{
+     html+=`<div class="asia-row asia-unassigned"><div class="asia-number">${n}.</div><div style="grid-column:2/6"><span class="asia-empty-name">Unknown. player not set!</span></div></div>`;
+   }
+ }
+ root.innerHTML=html;
+ root.querySelectorAll('.asia-row').forEach((row,idx)=>{const p=players.find(x=>Number(x[5])===idx+1);if(p){row.style.cursor='pointer';row.onclick=()=>showPlayerProfile(p);row.onkeydown=e=>{if(e.key==='Enter'||e.key===' ')showPlayerProfile(p);};}});
+ const rem=document.getElementById("asiaRemain");
+ if(rem)rem.textContent=(30-assigned)+" Remain";
+}
+renderAsiaRanking();
+function profileUrl(name){return location.href.split("#")[0]+"#player="+encodeURIComponent(name)}
+function renderDashboard(){const email=(document.getElementById("dashboardEmail")?.value||"").trim().toLowerCase(),root=document.getElementById("dashboardResult");if(!root)return;const tests=tierTests.filter(t=>(t.email||"").toLowerCase()===email);if(!email){root.innerHTML="<p style='color:var(--muted)'>Enter the email used for your tier test.</p>";return}if(!tests.length){root.innerHTML="<p style='color:var(--muted)'>No tier test was found for this email.</p>";return}const t=tests[tests.length-1],p=players.find(x=>x[0].toLowerCase()===t.name.toLowerCase());root.innerHTML=`<div class="admin-card"><h3>${escapeHtml(t.name)}</h3><p><b>Tier:</b> ${escapeHtml(p?.[1]||"Pending")}</p><p><b>Rank:</b> ${escapeHtml(p?.[4]||"Not assigned")}</p><p><b>Test Status:</b> ${escapeHtml(t.status)}</p><p><b>History:</b> ${escapeHtml((p?.[3]?.history||[]).join(" → ")||"No tier history yet")}</p>${p?`<a class="action primary" style="display:inline-block;text-decoration:none" href="${profileUrl(p[0])}">👤 View My Profile</a>`:""}</div>`}
+function renderNotifications(){const email=(document.getElementById("notificationEmail")?.value||"").trim().toLowerCase(),root=document.getElementById("notificationResult");if(!root)return;const tests=tierTests.filter(t=>(t.email||"").toLowerCase()===email),notes=[];tests.forEach(t=>(t.notifications||[]).forEach(n=>notes.push({...n,name:t.name})));notes.sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));if(!email){root.innerHTML="<p style='color:var(--muted)'>Enter your email used for your tier test.</p>";return}root.innerHTML=notes.length?notes.map(n=>`<div class="admin-card"><h3>${escapeHtml(n.title)} <span style="color:${n.status==="Approved"?"#7bea8a":n.status==="Rejected"?"#ff7777":"#ffd86b"}">• ${escapeHtml(n.status||"Info")}</span></h3><p style="line-height:1.7">${escapeHtml(n.message)}</p>${n.tier?`<p><b>Tier:</b> ${escapeHtml(n.tier)} &nbsp; <b>Rank:</b> ${escapeHtml(n.rank||"Not assigned")}</p>`:""}<small style="color:var(--muted)">${new Date(n.createdAt).toLocaleString()}</small>${n.profileUrl?`<br><a class="action primary" style="display:inline-block;text-decoration:none;margin-top:10px" href="${n.profileUrl}">👤 View My Profile</a>`:""}</div>`).join(""):"<div class='box'><p style='color:var(--muted)'>No notifications found for this email.</p></div>";tests.forEach(t=>(t.notifications||[]).forEach(n=>n.unread=false));saveTierTests();}
+document.getElementById("dashboardCheck")?.addEventListener("click",renderDashboard);document.getElementById("notificationCheck")?.addEventListener("click",renderNotifications);loadWebsiteNews();
+function escapeHtml(v){return String(v).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
+window.changePlayerRank=function(i,r){if(!adminLoggedIn||!players[i])return;players[i][4]=(r||"").trim();save();renderPlayers();renderAdmin();};
+window.changeAsiaRank=function(i,v){if(!adminLoggedIn||!players[i])return;const value=String(v||"").trim();if(value===""){players[i][5]="";save();renderPlayers();renderAdmin();renderAsiaRanking();return;}const n=Number(value);if(!Number.isInteger(n)||n<1||n>30){alert("Asia rank must be between 1 and 30.");renderAdmin();return;}const other=players.findIndex((p,idx)=>idx!==i&&Number(p[5])===n);if(other>=0)players[other][5]="";players[i][5]=n;save();renderPlayers();renderAdmin();renderAsiaRanking();};
+window.changePlayerTier=function(i,t){if(!adminLoggedIn||!players[i])return;if(t!==""&&!TIER_ORDER.includes(t))return;if(t&&players[i][1]!==t&&tierFull(t))return alert(t+" Tier is full! Maximum 30 players are allowed.");players[i][1]=t;save();renderPlayers();renderAdmin();};
+window.deletePlayer=function(i){if(!adminLoggedIn||!players[i])return;if(confirm("Delete this ranked player?")){players.splice(i,1);save();renderPlayers();renderAdmin();}};
+
+function flagFor(country){const map={Bangladesh:'🇧🇩',India:'🇮🇳',Pakistan:'🇵🇰',Nepal:'🇳🇵',USA:'🇺🇸',Canada:'🇨🇦',UK:'🇬🇧',Indonesia:'🇮🇩',Malaysia:'🇲🇾',Philippines:'🇵🇭',Japan:'🇯🇵',SouthKorea:'🇰🇷',Australia:'🇦🇺'};return map[country]||'🌍';}
+function toast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2200)}
+window.copyPlayerLink=function(n){const name=decodeURIComponent(n);const url=location.href.split('#')[0]+'#player='+encodeURIComponent(name);if(navigator.clipboard)navigator.clipboard.writeText(url);toast('Profile link copied!')};
+window.requestRetest=function(n){const name=decodeURIComponent(n);const existing=tierTests.find(x=>x.name.toLowerCase()===name.toLowerCase()&&x.status==='Retest Requested');if(existing){toast('Retest already requested.');return}tierTests.push({name,status:'Retest Requested',submittedAt:new Date().toISOString()});saveTierTests();toast('Retest request sent!')};
+window.saveAnnouncement=function(){if(!adminLoggedIn)return;localStorage.setItem('mcpeAnnouncement',document.getElementById('announcementText').value.trim());if(window.firebaseSaveAnnouncement)window.firebaseSaveAnnouncement(document.getElementById('announcementText').value.trim());toast('Announcement saved!')};
+function renderModeBoards(){const root=document.getElementById('modeBoards');if(!root)return;const modes=['UHC','FFA','Combo','NoDebuff','Survival PvP','Other'];root.innerHTML=modes.map(m=>{const arr=players.filter(p=>(p[3]||{}).mode===m).sort((a,b)=>TIER_ORDER.indexOf(a[1])-TIER_ORDER.indexOf(b[1])).slice(0,5);return `<div class="mode-card"><b>${m}</b><div style="margin-top:8px">${arr.length?arr.map((p,i)=>`${i+1}. ${escapeHtml(p[0])} <span class="rank-badge">${escapeHtml(p[4]||p[1])}</span>`).join('<br>'):'<span style="color:var(--muted)">No ranked players</span>'}</div></div>`}).join('')}
+function populateCountryFilter(){const sel=document.getElementById('countryFilter');if(!sel)return;const countries=[...new Set(players.map(p=>(p[3]||{}).country).filter(Boolean))].sort();sel.innerHTML='<option value="">🌍 All Countries</option>'+countries.map(c=>`<option>${escapeHtml(c)}</option>`).join('')}
+function enhancedPlayerFilter(){const q=(document.getElementById('proSearch')?.value||'').toLowerCase(),country=document.getElementById('countryFilter')?.value||'',mode=document.getElementById('modeFilter')?.value||'';const root=document.getElementById('tierList');root.querySelectorAll('.card').forEach(c=>{const p=players.find(x=>x[0]===c.dataset.name),pr=p?.[3]||{},ok=(!q||[p?.[0],pr.country,p?.[4],p?.[1]].join(' ').toLowerCase().includes(q))&&(!country||pr.country===country)&&(!mode||pr.mode===mode);c.style.display=ok?'':'none';});}
+
+document.getElementById('proSearch')?.addEventListener('input',enhancedPlayerFilter);document.getElementById('countryFilter')?.addEventListener('change',enhancedPlayerFilter);document.getElementById('modeFilter')?.addEventListener('change',enhancedPlayerFilter);
+document.getElementById('themeToggle')?.addEventListener('click',()=>{document.body.classList.toggle('light-mode');localStorage.setItem('mcpeTheme',document.body.classList.contains('light-mode')?'light':'dark')});
+if(localStorage.getItem('mcpeTheme')==='light')document.body.classList.add('light-mode');
+const oldRenderPlayers=renderPlayers;renderPlayers=function(filter=''){oldRenderPlayers(filter);populateCountryFilter();renderModeBoards();renderAsiaRanking();setTimeout(enhancedPlayerFilter,0)};
+const oldRenderAdmin=renderAdmin;renderAdmin=function(){oldRenderAdmin();const a=document.getElementById('announcementText');if(a)a.value=localStorage.getItem('mcpeAnnouncement')||''};
+// Restore shared profile from URL hash
+function openHashProfile(){const h=location.hash;if(h.startsWith("#player=")){const n=decodeURIComponent(h.slice(8));const p=players.find(x=>x[0].toLowerCase()===n.toLowerCase());if(p){showPlayerProfile(p);return;}toast("Player profile not found.");}}
+window.addEventListener('hashchange',openHashProfile);setTimeout(openHashProfile,300);
+
+document.getElementById("adminNav").onclick=()=>{
+  if(!adminLoggedIn)document.getElementById("adminLoginModal").classList.add("show");
+  else {showTab("admin");renderAdmin();}
+};
+document.getElementById("adminLoginBtn").onclick=async()=>{
+  const pw=document.getElementById("adminPassword").value;
+  const msg=document.getElementById("adminLoginMsg");
+  msg.textContent="Signing in with Firebase…";
+  try{
+    const email=prompt("Enter your Firebase admin email:", firebaseUser?.email||"");
+    if(!email){msg.textContent="Admin email is required.";return;}
+    await firebaseAuth.signInWithEmailAndPassword(email.trim(),pw);
+    const user=firebaseAuth.currentUser;
+    const snap=await firebaseDb.collection("admins").doc(user.uid).get();
+    if(!snap.exists || snap.data().enabled===false){
+      await firebaseAuth.signOut();
+      msg.textContent="This Firebase account is not authorized as an admin yet.";
+      alert("Admin setup is almost complete. In Firestore, create admins/"+user.uid+" with enabled: true, then log in again.");
+      return;
+    }
+    adminLoggedIn=true;sessionStorage.setItem("mcpeAdminLoggedIn","1");
+    document.getElementById("adminLoginModal").classList.remove("show");
+    document.getElementById("adminPassword").value="";
+    msg.textContent=""; showTab("admin"); renderAdmin();
+  }catch(e){ msg.textContent=e.message||"Firebase sign-in failed."; }
+};
+document.getElementById("adminLoginClose").onclick=()=>document.getElementById("adminLoginModal").classList.remove("show");
+document.getElementById("adminLogout").onclick=async()=>{
+  try{await firebaseAuth.signOut();}catch(e){}
+  adminLoggedIn=false;sessionStorage.removeItem("mcpeAdminLoggedIn");showTab("players");
+};
+
+
+
+/* ===== Firebase production sync layer ===== */
+(function(){
+  const F={players:"players", tests:"tierTests", news:"news", announcements:"announcements"};
+  let firstCloudPlayers=true, firstCloudTests=true;
+  function safeDocId(name){ return String(name||"").toLowerCase().replace(/[^a-z0-9_-]/g,"_").slice(0,120)||("player_"+Date.now()); }
+  function testDocId(x,i){ return String(x.id||((x.name||"test")+"_"+(x.submittedAt||i))).replace(/[^a-zA-Z0-9_-]/g,"_").slice(0,120); }
+  async function writePlayers(){
+    try{
+      const col=firebaseDb.collection(F.players), snap=await col.get(), wanted={};
+      const batch=firebaseDb.batch();
+      players.forEach(p=>{const id=safeDocId(p[0]);wanted[id]=true;batch.set(col.doc(id),{name:p[0]||"",tier:p[1]||"",skin:p[2]||"",profile:p[3]||{},customRank:p[4]||"",asiaRank:p[5]||"",updatedAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true});});
+      snap.docs.forEach(d=>{if(!wanted[d.id])batch.delete(d.ref);}); await batch.commit();
+    }catch(e){console.warn("Firebase players sync failed",e);}
+  }
+  async function loadPlayers(){
+    try{
+      const snap=await firebaseDb.collection(F.players).get();
+      players=snap.docs.map(d=>{const x=d.data();return [x.name||d.id,x.tier||"",x.skin||"",x.profile||{},x.customRank||"",x.asiaRank||""];});
+      localStorage.setItem("mcpeTierPlayers",JSON.stringify(players));
+      renderPlayers();renderAsiaRanking();renderAdmin();
+    }catch(e){console.warn("Firebase player load failed; using local cache",e);}
+  }
+  async function writeTests(){
+    try{
+      const col=firebaseDb.collection(F.tests), snap=await col.get(), wanted={}; const batch=firebaseDb.batch();
+      tierTests.forEach((x,i)=>{const id=testDocId(x,i);x.id=id;wanted[id]=true;batch.set(col.doc(id),x,{merge:true});});
+      snap.docs.forEach(d=>{if(!wanted[d.id])batch.delete(d.ref);}); await batch.commit();
+    }catch(e){console.warn("Firebase tier-test sync failed",e);}
+  }
+  async function loadTests(){
+    try{
+      const snap=await firebaseDb.collection(F.tests).get();
+      tierTests=snap.docs.map(d=>({id:d.id,...d.data()}));localStorage.setItem("mcpeTierTests",JSON.stringify(tierTests));renderAdmin();
+    }catch(e){console.warn("Firebase tier-test load failed; using local cache",e);}
+  }
+  async function saveCloudAnnouncement(text){
+    try{await firebaseDb.collection(F.announcements).doc("main").set({text:text||"",updatedAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true});}catch(e){console.warn(e);}
+  }
+  async function loadCloudAnnouncement(){
+    try{const d=await firebaseDb.collection(F.announcements).doc("main").get();const text=d.exists?(d.data().text||""):"";const a=document.querySelector(".announcement");if(a)a.innerHTML=text?"📢 "+escapeHtml(text):"";const input=document.getElementById("announcementText");if(input)input.value=text;localStorage.setItem("mcpeAnnouncement",text);}catch(e){console.warn("Announcement load failed",e);}
+  }
+  async function saveCloudNews(){
+    try{
+      const news=JSON.parse(localStorage.getItem("mcpeNews")||"[]"), col=firebaseDb.collection(F.news), snap=await col.get(), wanted={};const batch=firebaseDb.batch();
+      news.forEach((x,i)=>{const id=String(x.id||("news_"+i+"_"+(x.createdAt||""))).replace(/[^a-zA-Z0-9_-]/g,"_").slice(0,120);x.id=id;wanted[id]=true;batch.set(col.doc(id),x,{merge:true});});snap.docs.forEach(d=>{if(!wanted[d.id])batch.delete(d.ref);});await batch.commit();
+    }catch(e){console.warn("News sync failed",e);}
+  }
+  async function loadCloudNews(){
+    try{const snap=await firebaseDb.collection(F.news).get();const news=snap.docs.map(d=>({id:d.id,...d.data()}));localStorage.setItem("mcpeNews",JSON.stringify(news));if(typeof renderNews==='function')renderNews();else if(typeof renderPublicNews==='function')renderPublicNews();}catch(e){console.warn("News load failed",e);}
+  }
+  window.firebaseSyncNow=()=>{writePlayers();writeTests();saveCloudNews();};
+  window.save=function(){localStorage.setItem("mcpeTierPlayers",JSON.stringify(players));writePlayers();};
+  window.saveTierTests=function(){localStorage.setItem("mcpeTierTests",JSON.stringify(tierTests));writeTests();};
+  window.firebaseSaveAnnouncement=saveCloudAnnouncement;
+  window.firebaseSaveNews=saveCloudNews;
+  setTimeout(()=>{loadPlayers();loadTests();loadCloudAnnouncement();loadCloudNews();},500);
+})();
+
+/* ===== Animation engine ===== */
+(function(){
+  const progress=document.createElement('div');
+  progress.id='scrollProgress';
+  document.body.prepend(progress);
+  const topBtn=document.createElement('button');
+  topBtn.id='backToTop'; topBtn.type='button'; topBtn.setAttribute('aria-label','Back to top'); topBtn.innerHTML='↑';
+  document.body.appendChild(topBtn);
+
+  function updateScroll(){
+    const doc=document.documentElement;
+    const max=doc.scrollHeight-doc.clientHeight;
+    progress.style.width=(max>0?(doc.scrollTop/max)*100:0)+'%';
+    topBtn.classList.toggle('show',doc.scrollTop>450);
+  }
+  window.addEventListener('scroll',updateScroll,{passive:true});
+  updateScroll();
+  topBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+
+  function revealAll(){
+    document.querySelectorAll('main > section, .card, .panel, .tier-card, .admin-card, .form-card, .notice, .topbar, .table-wrap').forEach(el=>{
+      if(!el.classList.contains('reveal')) el.classList.add('reveal');
+    });
+    const items=document.querySelectorAll('.reveal:not(.visible)');
+    if(!('IntersectionObserver' in window)){items.forEach(x=>x.classList.add('visible'));return;}
+    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -35px 0px'});
+    items.forEach(x=>io.observe(x));
+  }
+  revealAll();
+
+  document.addEventListener('click',e=>{
+    const btn=e.target.closest('button'); if(!btn || btn.id==='backToTop') return;
+    btn.classList.add('ripple');
+    const r=document.createElement('span'), rect=btn.getBoundingClientRect(), size=Math.max(rect.width,rect.height);
+    r.className='ripple-wave'; r.style.width=r.style.height=size+'px'; r.style.left=(e.clientX-rect.left-size/2)+'px'; r.style.top=(e.clientY-rect.top-size/2)+'px';
+    btn.appendChild(r); setTimeout(()=>r.remove(),600);
+  });
+
+  const oldShowTab=window.showTab;
+  if(typeof oldShowTab==='function'){
+    window.showTab=function(tab){oldShowTab(tab);setTimeout(revealAll,40);window.scrollTo({top:0,behavior:'smooth'});};
+  }
+})();
+
+</script>
+<script>
+(function(){
+  function cleanMaxlengthText(){
+    document.querySelectorAll('input,textarea').forEach(function(el){
+      if(typeof el.value==='string' && /maxlenth|maxlength\s*=?/i.test(el.value)){ el.value=''; }
+      if(el.placeholder && /maxlenth|maxlength\s*=?/i.test(el.placeholder)){ el.placeholder=''; }
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',cleanMaxlengthText);
+  else cleanMaxlengthText();
+})();
+</script>
+</body>
+</html>
